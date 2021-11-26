@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    text-transform: capitalize;
+}
+
+.home{
+    background-color: #FCA4A6;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.bd-grid{
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    grid-template-rows: 1fr ;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-data .title{
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.home-data .description{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.home-button{
+    background-color: #A83E51;
+    border-radius: .5rem;
+    padding: .6rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.home-img{
+    width: 604px;
+    height: 466px;
+
+}
+.home-img img{
+    position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    .home{
+        background-color: #FCA4A6;
+        max-width: 620px;
+        height: 100vh;
+       
+    }
+
+    .bd-grid{
+        width: 600px;
+        grid-template-columns: repeat(1, 550px);
+        grid-template-rows: 2fr;
+        row-gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home .title{
+        line-height: 3rem;
+
+    }
+
+    .home-data .title{
+      font-size: 3rem;
+    }
+
+    .home-data{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .home-data .description{
+      font-size: 1.2rem;
+    }
+    .home-img{
+        order:1;
+        width: 375px;
+        height: 289px;
+    }
+
+    .home-img img{
+        width: 375px;
+    }
+
+    
+}
+
+@media screen and (max-width: 515px){
+    .bd-grid{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+ 
+    
+
+.home-data .title{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.home-data .description{
+    margin-bottom: .7rem;
+    font-size: .5rem;
+}
+
+
+.home-img{
+    width: 372px;
+    height: 380px;
+
+}
+.home-img img{
+    position: absolute;
+    width: 372px;
+}
+}
+
+@media screen and (max-width: 1200px){
+
+    .home{
+        height: 100vh;
+    }
+
+    .bd-grid{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        grid-gap: 1rem;
+    }
+ 
+    
+
+.home-data .title{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.home-data .description{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.home-img{
+    width: 604px;
+    height: 466px;
+
+}
+.home-img{
+    width: 475px;
+    height: 380px;
+
+}
+.home-img img{
+    position: absolute;
+    width: 475px;
+}
+}
